@@ -35,4 +35,60 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Funcionalidad de galería
+    const galleryModal = document.getElementById("gallery-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementById("close-modal");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    
+    const galleryImages = [
+        "UNO.png", "DOS.png", "TRES.png", "CUATRO.png", "CINCO.png",
+        "SEIS.png", "SIETE.png", "OCHO.png", "NUEVE.png", "DIEZ.png",
+        "ONCE.png", "DOCE.png", "TRECE.png", "CATORCE.png", "QUINCE.png", "DIES7.png"
+    ];
+    
+    let currentImageIndex = 0;
+
+    window.openModal = function(event) {
+        const img = event.target.closest("img");
+        if (img) {
+            const src = img.src;
+            currentImageIndex = galleryImages.indexOf(src);
+            modalImage.src = src;
+            galleryModal.classList.remove("hidden");
+            lucide.createIcons();
+        }
+    };
+
+    closeModal.addEventListener("click", () => {
+        galleryModal.classList.add("hidden");
+    });
+
+    galleryModal.addEventListener("click", (e) => {
+        if (e.target === galleryModal) {
+            galleryModal.classList.add("hidden");
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        modalImage.src = galleryImages[currentImageIndex];
+        lucide.createIcons();
+    });
+
+    nextBtn.addEventListener("click", () => {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        modalImage.src = galleryImages[currentImageIndex];
+        lucide.createIcons();
+    });
+
+    // Navegación con teclado
+    document.addEventListener("keydown", (e) => {
+        if (galleryModal.classList.contains("hidden")) return;
+        if (e.key === "ArrowLeft") prevBtn.click();
+        if (e.key === "ArrowRight") nextBtn.click();
+        if (e.key === "Escape") closeModal.click();
+    });
+
 });
