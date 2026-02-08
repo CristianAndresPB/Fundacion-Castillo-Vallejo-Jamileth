@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fundación Castillo Vallejo Jamileth - Hogar geriátrico en Cali comprometido con la dignidad y bienestar del adulto mayor.">
+    <title>Fundación Castillo Vallejo Jamileth | Hogar Geriátrico</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<nav class="fixed w-full z-50 glass-nav border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+        <div class="flex items-center space-x-3">
+            <img src="logo.png" alt="Logo Fundación Castillo Vallejo Jamileth" class="w-12 h-12 rounded-full object-cover">
+            <span class="text-xl font-bold text-[#2D5A56] hidden sm:block">
+                Castillo Vallejo<br><span class="text-sm italic">Jamileth</span>
+            </span>
+        </div>
+
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="#contacto" class="btn-primary">Contáctanos</a>
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden text-[#2D5A56]">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-6 space-y-4 shadow-xl">
+        <a href="#inicio" class="block nav-link">Inicio</a>
+        <a href="#nosotros" class="block nav-link">Nosotros</a>
+        <a href="#servicios" class="block nav-link">Servicios</a>
+        <a href="#contacto" class="block font-bold text-[#D4A373]">Contáctanos</a>
+    </div>
+</nav>
+
+<section id="inicio" class="hero-gradient min-h-screen flex items-center pt-20">
+    <div class="max-w-4xl mx-auto text-white px-6">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">
+            Un hogar digno, seguro y lleno de amor
+        </h1>
+        <p class="text-xl mb-8">
+            Fundación comprometida con la dignidad y el bienestar de las personas mayores en Cali.
+        </p>
+        <a href="#contacto" class="btn-secondary">Pedir Información</a>
+    </div>
+</section>
+
+<section id="nosotros" class="py-20 bg-stone-50">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-[#2D5A56] mb-4">Sobre Nosotros</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                La Fundación Castillo Vallejo Jamileth es una institución dedicada al cuidado integral de las personas mayores, 
+                proporcionando un entorno seguro, amoroso y profesional donde puedan vivir con dignidad y calidad de vida.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-2xl font-semibold text-[#2D5A56] mb-4">Nuestra Misión</h3>
+                <p class="text-gray-700 mb-6">
+                    Brindar atención especializada y compasiva a los adultos mayores, promoviendo su bienestar físico, 
+                    emocional y social a través de servicios de alta calidad en un ambiente familiar y respetuoso.
+                </p>
+                <h3 class="text-2xl font-semibold text-[#2D5A56] mb-4">Nuestra Visión</h3>
+                <p class="text-gray-700">
+                    Ser reconocidos como el hogar geriátrico líder en Cali, donde cada residente recibe el cuidado 
+                    personalizado que merece, contribuyendo al envejecimiento activo y saludable de nuestra comunidad.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-[#2D5A56] mb-4">Nuestros Valores</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i data-lucide="heart" class="text-[#D4A373] w-5 h-5 mr-3"></i>
+                        <span class="text-gray-700">Compasión y empatía</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="shield" class="text-[#D4A373] w-5 h-5 mr-3"></i>
+                        <span class="text-gray-700">Respeto y dignidad</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="users" class="text-[#D4A373] w-5 h-5 mr-3"></i>
+                        <span class="text-gray-700">Atención personalizada</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="star" class="text-[#D4A373] w-5 h-5 mr-3"></i>
+                        <span class="text-gray-700">Excelencia profesional</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="servicios" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-[#2D5A56] mb-4">Nuestros Servicios</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades individuales 
+                de cada residente, garantizando su comodidad y bienestar en todas las etapas de la vida.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="service-card bg-stone-50 p-8 rounded-lg text-center">
+                <i data-lucide="home" class="text-[#D4A373] w-12 h-12 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-3">Alojamiento y Comidas</h3>
+                <p class="text-gray-700">
+                    Habitaciones cómodas y privadas con alimentación balanceada preparada por nutricionistas profesionales.
+                </p>
+            </div>
+            <div class="service-card bg-stone-50 p-8 rounded-lg text-center">
+                <i data-lucide="activity" class="text-[#D4A373] w-12 h-12 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-3">Atención Médica</h3>
+                <p class="text-gray-700">
+                    Supervisión médica las 24 horas, administración de medicamentos y coordinación con especialistas.
+                </p>
+            </div>
+            <div class="service-card bg-stone-50 p-8 rounded-lg text-center">
+                <i data-lucide="smile" class="text-[#D4A373] w-12 h-12 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-3">Actividades Recreativas</h3>
+                <p class="text-gray-700">
+                    Programas de entretenimiento, ejercicios físicos adaptados y actividades sociales para mantener la vitalidad.
+                </p>
+            </div>
+            <div class="service-card bg-stone-50 p-8 rounded-lg text-center">
+                <i data-lucide="users" class="text-[#D4A373] w-12 h-12 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-3">Apoyo Emocional</h3>
+                <p class="text-gray-700">
+                    Terapia individual y grupal, apoyo psicológico y un ambiente familiar que fomenta las relaciones.
+                </p>
+            </div>
+            <div class="service-card bg-stone-50 p-8 rounded-lg text-center">
+                <i data-lucide="bath" class="text-[#D4A373] w-12 h-12 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-3">Asistencia Personal</h3>
+                <p class="text-gray-700">
+                    Ayuda con actividades diarias como higiene personal, vestimenta y movilidad según las necesidades.
+                </p>
+            </div>
+            <div class="service-card bg-stone-50 p-8 rounded-lg text-center">
+                <i data-lucide="phone" class="text-[#D4A373] w-12 h-12 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-3">Contacto con Familiares</h3>
+                <p class="text-gray-700">
+                    Facilidades para visitas familiares, llamadas telefónicas y comunicación constante con los seres queridos.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="py-20 bg-stone-50">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-[#2D5A56] mb-4">Contáctanos</h2>
+            <p class="text-lg text-gray-600">
+                Estamos aquí para responder tus preguntas y ayudarte a encontrar el mejor cuidado para tus seres queridos.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-semibold text-[#2D5A56] mb-6">Información de Contacto</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i data-lucide="map-pin" class="text-[#D4A373] w-6 h-6 mr-3"></i>
+                        <span class="text-gray-700"> Av. 8 Norte # 4n-42 B/El Bosque (Cali - Colombia)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-lucide="phone" class="text-[#D4A373] w-6 h-6 mr-3"></i>
+                        <span class="text-gray-700">602 403 3630</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-lucide="mail" class="text-[#D4A373] w-6 h-6 mr-3"></i>
+                        <span class="text-gray-700">yamilethcastillovallejo@gmail.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-lucide="clock" class="text-[#D4A373] w-6 h-6 mr-3"></i>
+                        <span class="text-gray-700">Lunes a Domingo: 24/7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-[#2D5A56] mb-6">Envíanos un Mensaje</h3>
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2D5A56]">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2D5A56]">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2D5A56]"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#2D5A56] text-white py-2 px-4 rounded-md hover:bg-[#1F3F3A] transition duration-300">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h3 class="text-2xl font-semibold text-[#2D5A56] mb-6 text-center">Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.000!2d-76.5291674!3d3.4855624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMy40ODU1NjI0LC03Ni41MjkxNjc0!5e0!3m2!1ses!2s!4v1234567890!5m2!1ses!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-stone-900 text-white text-center py-10">
+    <p class="italic text-[#D4A373] mb-4">"Donde la vejez se vive con dignidad, amor y esperanza."</p>
+    <p class="text-sm opacity-60">© 2026 Fundación Castillo Vallejo Jamileth - Cali, Colombia</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573112057398?text=Hola,%20estoy%20interesado%20en%20recibir%20informaci%C3%B3n%20sobre%20los%20servicios%20del%20Hogar%20Geri%C3%A1trico%20Fundaci%C3%B3n%20Castillo%20Vallejo%20Jamileth." target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+</a>
+
+</body>
+</html>
